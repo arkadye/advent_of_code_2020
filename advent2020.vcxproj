@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{1A6293C3-BD29-493A-B8A0-8A737726766E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\advent1.cpp" />
+    <ClCompile Include="src\advent10.cpp" />
+    <ClCompile Include="src\advent11.cpp" />
+    <ClCompile Include="src\advent12.cpp" />
+    <ClCompile Include="src\advent13.cpp" />
+    <ClCompile Include="src\advent14.cpp" />
+    <ClCompile Include="src\advent15.cpp" />
+    <ClCompile Include="src\advent16.cpp" />
+    <ClCompile Include="src\advent17.cpp" />
+    <ClCompile Include="src\advent18.cpp" />
+    <ClCompile Include="src\advent19.cpp" />
+    <ClCompile Include="src\advent2.cpp" />
+    <ClCompile Include="src\advent20.cpp" />
+    <ClCompile Include="src\advent21.cpp" />
+    <ClCompile Include="src\advent22.cpp" />
+    <ClCompile Include="src\advent23.cpp" />
+    <ClCompile Include="src\advent24.cpp" />
+    <ClCompile Include="src\advent25.cpp" />
+    <ClCompile Include="src\advent3.cpp" />
+    <ClCompile Include="src\advent4.cpp" />
+    <ClCompile Include="src\advent5.cpp" />
+    <ClCompile Include="src\advent6.cpp" />
+    <ClCompile Include="src\advent7.cpp" />
+    <ClCompile Include="src\advent8.cpp" />
+    <ClCompile Include="src\advent9.cpp" />
+    <ClCompile Include="src\advent_of_code_testcases.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="advent\advent1.h" />
+    <ClInclude Include="advent\advent10.h" />
+    <ClInclude Include="advent\advent11.h" />
+    <ClInclude Include="advent\advent12.h" />
+    <ClInclude Include="advent\advent13.h" />
+    <ClInclude Include="advent\advent14.h" />
+    <ClInclude Include="advent\advent15.h" />
+    <ClInclude Include="advent\advent16.h" />
+    <ClInclude Include="advent\advent17.h" />
+    <ClInclude Include="advent\advent18.h" />
+    <ClInclude Include="advent\advent19.h" />
+    <ClInclude Include="advent\advent2.h" />
+    <ClInclude Include="advent\advent20.h" />
+    <ClInclude Include="advent\advent21.h" />
+    <ClInclude Include="advent\advent22.h" />
+    <ClInclude Include="advent\advent23.h" />
+    <ClInclude Include="advent\advent24.h" />
+    <ClInclude Include="advent\advent25.h" />
+    <ClInclude Include="advent\advent3.h" />
+    <ClInclude Include="advent\advent4.h" />
+    <ClInclude Include="advent\advent5.h" />
+    <ClInclude Include="advent\advent6.h" />
+    <ClInclude Include="advent\advent7.h" />
+    <ClInclude Include="advent\advent8.h" />
+    <ClInclude Include="advent\advent9.h" />
+    <ClInclude Include="advent\advent_headers.h" />
+    <ClInclude Include="advent\advent_logger.h" />
+    <ClInclude Include="advent\advent_of_code.h" />
+    <ClInclude Include="advent\advent_setup.h" />
+    <ClInclude Include="advent\advent_types.h" />
+    <ClInclude Include="utils\advent_utils.h" />
+    <ClInclude Include="utils\binary_find.h" />
+    <ClInclude Include="utils\combine_maps.h" />
+    <ClInclude Include="utils\conway_simulation.h" />
+    <ClInclude Include="utils\Coords.h" />
+    <ClInclude Include="utils\erase_remove_if.h" />
+    <ClInclude Include="utils\index_iterator2.h" />
+    <ClInclude Include="utils\index_iterator.h" />
+    <ClInclude Include="utils\int_range.h" />
+    <ClInclude Include="utils\in_range.h" />
+    <ClInclude Include="utils\isqrt.h" />
+    <ClInclude Include="utils\istream_line_iterator.h" />
+    <ClInclude Include="utils\push_back_unique.h" />
+    <ClInclude Include="utils\ring_buffer.h" />
+    <ClInclude Include="utils\sorted_vector.h" />
+    <ClInclude Include="utils\split_string.h" />
+    <ClInclude Include="utils\swap_remove.h" />
+    <ClInclude Include="utils\to_value.h" />
+    <ClInclude Include="utils\transform_if.h" />
+    <ClInclude Include="utils\trim_string.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="inputs\advent1.txt" />
+    <Text Include="inputs\advent10.txt" />
+    <Text Include="inputs\advent10_testcase_a.txt" />
+    <Text Include="inputs\advent10_testcase_b.txt" />
+    <Text Include="inputs\advent11.txt" />
+    <Text Include="inputs\advent11_testcase_a.txt" />
+    <Text Include="inputs\advent12.txt" />
+    <Text Include="inputs\advent13.txt" />
+    <Text Include="inputs\advent14.txt" />
+    <Text Include="inputs\advent15.txt" />
+    <Text Include="inputs\advent16.txt" />
+    <Text Include="inputs\advent16_testcase_a.txt" />
+    <Text Include="inputs\advent16_testcase_b.txt" />
+    <Text Include="inputs\advent17.txt" />
+    <Text Include="inputs\advent18.txt" />
+    <Text Include="inputs\advent19.txt" />
+    <Text Include="inputs\advent19_testcase_a.txt" />
+    <Text Include="inputs\advent19_testcase_b.txt" />
+    <Text Include="inputs\advent2.txt" />
+    <Text Include="inputs\advent20.txt" />
+    <Text Include="inputs\advent20_testcase_a.txt" />
+    <Text Include="inputs\advent21.txt" />
+    <Text Include="inputs\advent22.txt" />
+    <Text Include="inputs\advent22_testcase_a.txt" />
+    <Text Include="inputs\advent23.txt" />
+    <Text Include="inputs\advent24.txt" />
+    <Text Include="inputs\advent24_testcase_a.txt" />
+    <Text Include="inputs\advent25.txt" />
+    <Text Include="inputs\advent3.txt" />
+    <Text Include="inputs\advent4.txt" />
+    <Text Include="inputs\advent4_testcase_a.txt" />
+    <Text Include="inputs\advent4_testcase_b.txt" />
+    <Text Include="inputs\advent4_testcase_c.txt" />
+    <Text Include="inputs\advent5.txt" />
+    <Text Include="inputs\advent6.txt" />
+    <Text Include="inputs\advent6_testcase_a.txt" />
+    <Text Include="inputs\advent7.txt" />
+    <Text Include="inputs\advent7_testcase_a.txt" />
+    <Text Include="inputs\advent7_testcase_c.txt" />
+    <Text Include="inputs\advent8.txt" />
+    <Text Include="inputs\advent9.txt" />
+    <Text Include="inputs\advent9_testcase_a.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
