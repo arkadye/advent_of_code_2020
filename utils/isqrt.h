@@ -1,5 +1,8 @@
 #pragma once
 
+// This feels like something you should find in the standard library, but all the square root functions there return doubles.
+// So I did this to avoid any possible problems with precision.
+
 #include <cassert>
 #include <type_traits>
 
