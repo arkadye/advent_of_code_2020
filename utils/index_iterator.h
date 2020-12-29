@@ -1,5 +1,9 @@
 #pragma once
 
+// This only works with int_range, hsnce why index_iterator2 exists.
+// A future iteration will move this to be part of the int_range instead,
+// and index_iterator2 will become this.
+
 #include <iterator>
 #include <functional>
 #include <cassert>
